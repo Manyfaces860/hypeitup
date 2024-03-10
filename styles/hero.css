@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Handjet:wght@100..900&family=Sansita+Swashed:wght@300..900&family=Unbounded:wght@200..900&display=swap');
+
+.hero-text{
+    background-image: linear-gradient(to right, #ff8a00, #e52e71);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.scroll-indicator-div{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.scroll-indicator-div .scroll-indicator:nth-child(1){
+    animation-delay: -0.2s;
+}
+.scroll-indicator-div .scroll-indicator:nth-child(2){
+    animation-delay: -0.4s;
+}
+
+.scroll-indicator{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    transform: rotateZ(45deg);
+    border-right: 1px solid rgb(228, 222, 222);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    position: relative;
+    animation: blink 2s infinite;
+    margin: -8px;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text-scroll{
+    font-family: "Unbounded", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    display: inline;
+}
+
+.text-scroll:nth-child(even){
+    position: relative;
+    color: #ff8a00;
+    animation: blink 2.2s infinite;
+    /* transform: rotateZ(45deg); */
+}
+.text-scroll:nth-child(odd){
+    position: relative;
+    color: purple;
+    font-weight: 900;
+    animation: blink 2.2s infinite;
+    animation-delay: 5s;
+    /* transform: rotateZ(-45deg); */
+}
+
+.glass-card{
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Applies a blur effect */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Semi-transparent border */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Soft shadow */
+}
+
+.large-card {
+    padding: 20px;
+    font-family: "Sansita Swashed", system-ui;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.large-card h1{
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.large-card p{
+    font-size: 40px;
+    color: rgb(165, 243, 63);
+}
+
+.small-cards .small-card1{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: 900;
+    color: white;
+    font-family: "Unbounded", sans-serif;
+}
+
+.small-cards .small-card2 {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: 900;
+    color: white;
+    font-family: "Grandstander", cursive;
+}
+
+.small-cards .small-card2 span {
+    color: #e52e71;
+}
+
+.glass-morph{
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Applies a blur effect */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Semi-transparent border */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Soft shadow */
+}
+
+.founders-h{
+    font-family: "Handjet", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
